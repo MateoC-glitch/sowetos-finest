@@ -8,13 +8,175 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- CSS // CUSTOM STYLES -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&display=swap" rel="stylesheet">
     <title>Soweto's Finest</title>
 </head>
 
 <body>
+    <!-- Navigation -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+      
+    <!-- Navigation Button -->
+    <span class="display-5 menu-btn" onclick="openNav()"><i class="fas fa-bars"></i></span>
+
+    <!-- Container to push all content on navigation slide -->
+    <div id="main">
+        <header id="home">
+            <div class="img-block">
+            </div>
+            <div class="text-block">
+                <center>
+                    <h1 class="display-1 text-center crown"><i class="fas fa-crown"></i></h1>
+                </center>
+                <h1 class="display-1 text-center">SOWETO'S FINEST</h1>
+                <h2 class="display-6 text-center">king's of sbhujwa</h2>
+            </div>
+            <div>
+                <iframe id="video" width="600" height="337" src="https://www.youtube.com/embed/hcVm3cxQu_E?autoplay=1&loop=1&mute=1&playlist=hcVm3cxQu_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </header>
     
+        <main>
+            <h2 class="display-5">[ Brief Overview ]</h2>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo cum eius qui voluptas! Architecto tempora eligendi fugiat voluptates, nihil natus voluptate eos sit facilis amet a saepe veritatis repudiandae incidunt?</p>
+            <br>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo cum eius qui voluptas! Architecto tempora eligendi fugiat voluptates, nihil natus voluptate eos sit facilis amet a saepe veritatis repudiandae incidunt?</p>
+
+            <center>
+                <a href="#" class="btn btn-lg btn-outline-light">Learn More</a>
+            </center>
+            
+            <h2 class="display-1 text-center">Book Soweto's Finest for your:</h2>
+            <ul>
+                <li>Corporate functions</li>
+                <li>Social events</li>
+            </ul>
+
+            <!-- BOOTSTRAP CAROUSEL -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h2 class="text-center title text">Parties</h2>
+                        <img src="..\img\party-placeholder.jpeg" class="d-block w-100 carousel-img" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="text-center title text">Concerts</h2>
+                        <img src="..\img\concert-placeholder.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="text-center title text">Ceremonies</h2>
+                        <img src="..\img\ceremony-placeholder.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="text-center title text">Festivals</h2>
+                        <img src="..\img\festival-placeholder.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </main>
+
+    
+        <section id="gallery">
+            <h2 class="display-6 text-center">Soweto's Finest Studio</h2>
+            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis dolores iure architecto deserunt suscipit, eius quos, ipsa earum iusto sapiente ipsam ipsum voluptas facere odit odio esse laborum sit vitae?</p>
+            <h2 class="display-6 text-center">Studio Gallery</h2>
+            <center>
+                <button class="btn btn-lg btn-outline-light" onclick="two()">2</button>
+                <button class="btn btn-lg btn-outline-light" onclick="four()">4</button>
+            </center>
+            <div class="row">
+                <div class="column">
+                    <img src="..\img\pexels-photo-157203.jpeg">
+                    <img src="..\img\pexels-photo-9211082.jpeg">
+                    <img src="..\img\ceremony-placeholder.jpeg">
+                </div>
+                <div class="column">
+                    <img src="..\img\pexels-photo-4434575.jpeg">
+                    <img src="..\img\pexels-photo-9211082.jpeg">
+                    <img src="..\img\pexels-photo-157203.jpeg">
+                </div>
+                <div class="column">
+                    <img src="..\img\ceremony-placeholder.jpeg">
+                    <img src="..\img\ceremony-placeholder.jpeg">
+                    <img src="..\img\pexels-photo-9211082.jpeg">
+                    <img src="..\img\ceremony-placeholder.jpeg">
+                </div>
+                <div class="column">
+                    <img src="..\img\ceremony-placeholder.jpeg">
+                    <img src="..\img\pexels-photo-9211082.jpeg">
+                    <img src="..\img\pexels-photo-9211082.jpeg">
+                </div>
+            </div>
+        </section>
+    
+    
+        <footer>
+            <h2 class="display-4 text-center">Contact us</h2>
+            <div class="footer-info">
+                <p class="lead text-center">Make an on-site booking at:</p>
+                <p class="lead text-center">100 Carr Street, Newtown 1818 Johannesburg, South Africa</p>
+                <br>
+                <p class="text-center">OR</p>
+                <br>
+                <p class="lead text-center">Fill out the Contact form, and we will get back to you</p>
+                <a href="contact.html" class="btn btn-lg btn-outline-light">Contact now</a>
+                <br>
+                <br>
+            </div>
+            <h3 class="display-6 text-center">follow us on</h3>
+            <div class="text-center social-links justify-content-center">
+                <a href="https://twitter.com/SowetosFinest/">
+                    <i class="fab fa-twitter"></i>
+                    <p>Twitter</p>
+                </a>
+                <a href="https://www.facebook.com/sowetosfinestSA/">
+                    <i class="fab fa-facebook-f"></i>
+                    <p>Facebook</p>
+                </a>
+                <a href="https://www.instagram.com/sowetosfinestdancestudio_/">
+                    <i class="fab fa-instagram"></i>
+                    <p>Instagram</p>
+                </a>
+                <a href="https://vm.tiktok.com/7UWpvx/ ">
+                    <i class="fab fa-tiktok"></i>
+                    <p>TikTok</p>
+                </a>
+                <a href="https://www.youtube.com/channel/UC3IMhH1x15K--5zcU7pqS3A">
+                    <i class="fab fa-youtube"></i>
+                    <p>Youtube</p>
+                </a>
+            </div>
+            <p class="lead text-center">&copy; 2021, Soweto's Finest</p>
+        </footer>
+    </div>
 </body>
 
 <!-- JS // BOOTSTRAP -->
 <script src="js/bootstrap.bundle.js"></script>
+<!-- NAV JS -->
+<script src="js/nav.js"></script>
+<!-- FONT AWESOME LINK -->
+<script src="https://kit.fontawesome.com/8633e4cab9.js" crossorigin="anonymous"></script>
 </html>

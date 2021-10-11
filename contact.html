@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS // BOOTSTRAP -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- CSS // CUSTOM STYLES -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&display=swap" rel="stylesheet">
+    <title>Soweto's Finest</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="contact.html">Contact</a>
+    </div>
+      
+    <!-- Navigation button -->
+    <span class="display-5 menu-btn" onclick="openNav()"><i class="fas fa-bars"></i></span>
+
+    <!-- container for pushing content to the side -->
+    <div id="main">
+        <header id="contact">
+            <h1 class="display-1 text-center">Contact</h1>
+        </header>
+
+        <section id="form">
+            <h2 class="display-3 text-center">Quick Note</h2>
+            <p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, eos:</p>
+            <br>
+            <br>
+
+            <hr class="turn">
+            <h3 class="display-5 text-center">Address</h3>
+            <p class="lead text-center">100 Carr Street, Newtown 1818 Johannesburg, South Africa</p>
+            <hr class="turn">
+
+            <br>
+            <br>
+            <h1 class="display-1 text-center">or</h1>
+            <br>
+            <div class="contact-option">
+                <h2 class="display-5 text-center">Contact Form</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">name</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Please enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">email</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Please enter your email address">
+                    </div>
+                    <div class="mb-3">
+                        <label for="date" class="form-label">dates you would like to book</label>
+                        <input type="date" name="date" id="date" class="form-control">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <h3 class="display-6 text-center">follow us on</h3>
+            <div class="text-center social-links justify-content-center">
+                <a href="https://twitter.com/SowetosFinest/">
+                    <i class="fab fa-twitter"></i>
+                    <p>Twitter</p>
+                </a>
+                <a href="https://www.facebook.com/sowetosfinestSA/">
+                    <i class="fab fa-facebook-f"></i>
+                    <p>Facebook</p>
+                </a>
+                <a href="https://www.instagram.com/sowetosfinestdancestudio_/">
+                    <i class="fab fa-instagram"></i>
+                    <p>Instagram</p>
+                </a>
+                <a href="https://vm.tiktok.com/7UWpvx/ ">
+                    <i class="fab fa-tiktok"></i>
+                    <p>TikTok</p>
+                </a>
+                <a href="https://www.youtube.com/channel/UC3IMhH1x15K--5zcU7pqS3A">
+                    <i class="fab fa-youtube"></i>
+                    <p>Youtube</p>
+                </a>
+            </div>
+            <p class="lead text-center">&copy; 2021, Soweto's Finest</p>
+    </footer>
+    </div>
+</body>
+
+<!-- JS // BOOTSTRAP -->
+<script src="js/bootstrap.bundle.js"></script>
+<!-- NAV JS -->
+<script src="js/nav.js"></script>
+<!-- FONT AWESOME LINK -->
+<script src="https://kit.fontawesome.com/8633e4cab9.js" crossorigin="anonymous"></script>
+</html>

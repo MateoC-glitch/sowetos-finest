@@ -1,0 +1,289 @@
+/* ============================================================================================================== */
+                                                                                                              
+/* GLOBAL */
+                                                                         
+/* ============================================================================================================== */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+    font-family: 'Major Mono Display', monospace;
+}
+.turn {
+    width: 1000px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* ============================================================================================================== */
+                                                                                                              
+/* NAVIGATION */
+                                                                         
+/* ============================================================================================================== */
+.menu-btn {
+    position: fixed;
+    left: 2%;
+    top: 1%;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px;
+    transition: 0.5s;
+} 
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav .active {
+    color: #f1f1f1;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+} 
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.text {
+    background-color: white;
+    color: black;
+    font-size: 4vw; /* Responsive font size */
+    font-weight: 900;
+    margin: 0 auto; /* Center the text container */
+    padding: 10px;
+    width: 50%;
+    text-align: center; /* Center text */
+    position: absolute; /* Position text */
+    top: 50%; /* Position text in the middle */
+    left: 50%; /* Position text in the middle */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+}
+/* ============================================================================================================== */
+                                                                                                              
+/* HEADER - HOME */
+
+/* ============================================================================================================== */
+#home {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.img-block {
+    width: 70%;
+    background: #b92b27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgb(255, 165, 0), );  /* Chrome 10-25, Safari 5.1-6 */
+    background-image: linear-gradient(to right, rgb(255, 165, 0, 0.5), rgba(126, 208, 149, 0.5)), url('../img/placeholder.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.text-block {
+    color: #fff;
+}
+.crown {
+    border: 4px outset white;
+    border-radius: 50%;
+    padding: 10px;
+    width: fit-content;
+}
+#video {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+/* ============================================================================================================== */
+                                                                                                              
+/* HEADER - ABOUT */
+
+/* ============================================================================================================== */
+#about {
+    height: 70vh;
+    background-image: linear-gradient(to right, rgba(106, 23, 151, 0.5), rgba(36, 114, 58, 0.5)), url("../img/placeholder.jpeg");
+    background-size: cover;
+}
+#about h1 {
+    position: relative;
+    top: 30vh;
+}
+/* ============================================================================================================== */
+                                                                                                              
+/* HEADER - CONTACT */
+
+/* ============================================================================================================== */
+#contact {
+    height: 35vh;
+    background-image: linear-gradient(90deg, rgba(185, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/placeholder.jpeg");
+    background-size: cover;
+}
+#contact h1 {
+    position: relative;
+    top: 10vh;
+}
+/* ============================================================================================================== */
+                                                                                                              
+/* SECTION - ABOUT US */
+
+/* ============================================================================================================== */
+#about-us {
+    padding: 5% 40px;
+}
+.about-flex {
+    display: flex;
+    flex-direction: row;
+}
+.img { 
+    width: 60vw;
+}
+.img img {
+    width: 55vw;
+    height: auto;
+    padding: 20px 10px;
+}
+/* ============================================================================================================== */
+                                                                                                              
+/* SECTION - CONTACT FORM */
+
+/* ============================================================================================================== */
+form {
+    padding: 0 10%;
+}
+#form {
+    margin: 10% 0;
+
+}
+.contact-option {
+    width: fit-content;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contact-option:hover {
+    background: linear-gradient(75deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
+}
+/* ============================================================================================================== */
+                                                                                                              
+/* BRIEF BIO */
+
+/* ============================================================================================================== */
+.carousel-img {
+    z-index: 0;
+}
+main {
+    padding: 5% 15%;
+    color: white;
+    font-weight: 800;
+}
+/* ============================================================================================================== */
+                                                                                                              
+/* GALLERY */
+
+/* ============================================================================================================== */
+#gallery {
+    padding: 0 5%;
+    color: #fff;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+/* Create two equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 99%;
+    padding: 0 4px;
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+}
+/* ============================================================================================================== */
+                                                                                                              
+/* FOOTER */
+
+/* ============================================================================================================== */
+footer {
+    background-color: black;
+    padding: 4%;
+}
+footer a {
+    color: #fff;
+}
+footer a i {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 17px;
+}
+.footer-info {
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5%;
+}
+.footer-info a {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.social-links {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.social-links a {
+    padding: 2%;
+}
