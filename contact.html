@@ -4,102 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS // BOOTSTRAP -->
+    <!-- BOOTSTRAP v5.1.3 -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- CSS // CUSTOM STYLES -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="css/styles.css">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
     <title>Soweto's Finest</title>
 </head>
-
 <body>
-    <!-- Navigation -->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a class="active" href="contact.html">Contact</a>
-    </div>
-      
-    <!-- Navigation button -->
-    <span class="display-5 menu-btn" onclick="openNav()"><i class="fas fa-bars"></i></span>
-
-    <!-- container for pushing content to the side -->
-    <div id="main">
-        <header id="contact">
-            <h1 class="display-1 text-center">Contact</h1>
-        </header>
-
-        <section id="form">
-            <h2 class="display-3 text-center">Quick Note</h2>
-            <p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, eos:</p>
-            <br>
-            <br>
-
-            <hr class="turn">
-            <h3 class="display-5 text-center">Address</h3>
-            <p class="lead text-center">100 Carr Street, Newtown 1818 Johannesburg, South Africa</p>
-            <hr class="turn">
-
-            <br>
-            <br>
-            <h1 class="display-1 text-center">or</h1>
-            <br>
-            <div class="contact-option">
-                <h2 class="display-5 text-center">Contact Form</h2>
-                <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">name</label>
-                        <input type="text" name="name" id="name" class="form-control" placeholder="Please enter your name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">email</label>
-                        <input type="email" name="email" id="email" class="form-control" placeholder="Please enter your email address">
-                    </div>
-                    <div class="mb-3">
-                        <label for="date" class="form-label">dates you would like to book</label>
-                        <input type="date" name="date" id="date" class="form-control">
-                    </div>
-                </form>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Soweto's Finest</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
+        </div>
+    </nav>
+
+    <div id="main">
+        <div class="bgimg-7">
+            <div class="caption text-center">
+                <span class="bgimg-border display-3">Contact us</span>
+            </div>
+        </div>
+
+        <section id="contact" class="light-poly">
+            <h1 class="display-1 text-center">Let's get started</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Enter first name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="surname" class="form-label">Surname</label>
+                    <input type="text" class="form-control" name="surname" id="surname" placeholder="Enter surname" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter email address" required>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <p class="form-label">What booking are you requesting?</p>
+                    <input type="radio" id="lesson" name="booking" value="lesson">
+                    <label for="lesson">Lesson</label><br>
+                    <input type="radio" id="performance" name="booking" value="performance">
+                    <label for="performance">Performance</label>
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label"></label>
+                    <input type="date" name="date" id="date" aria-describedby="dateHelp">
+                    <div id="dateHelp" class="form-text">optional (We can get back to you about the best available dates).</div>
+                </div>
+                <button type="submit">Get quote</button>
+            </form>
         </section>
 
         <footer>
             <h3 class="display-6 text-center">follow us on</h3>
             <div class="text-center social-links justify-content-center">
-                <a href="https://twitter.com/SowetosFinest/">
+                <a href="https://twitter.com/SowetosFinest/" target="_blank">
                     <i class="fab fa-twitter"></i>
                     <p>Twitter</p>
                 </a>
-                <a href="https://www.facebook.com/sowetosfinestSA/">
+                <a href="https://www.facebook.com/sowetosfinestSA/" target="_blank">
                     <i class="fab fa-facebook-f"></i>
                     <p>Facebook</p>
                 </a>
-                <a href="https://www.instagram.com/sowetosfinestdancestudio_/">
+                <a href="https://www.instagram.com/sowetosfinestdancestudio_/" target="_blank">
                     <i class="fab fa-instagram"></i>
                     <p>Instagram</p>
                 </a>
-                <a href="https://vm.tiktok.com/7UWpvx/ ">
+                <a href="https://vm.tiktok.com/7UWpvx/" target="_blank">
                     <i class="fab fa-tiktok"></i>
                     <p>TikTok</p>
                 </a>
-                <a href="https://www.youtube.com/channel/UC3IMhH1x15K--5zcU7pqS3A">
+                <a href="https://www.youtube.com/channel/UC3IMhH1x15K--5zcU7pqS3A" target="_blank">
                     <i class="fab fa-youtube"></i>
                     <p>Youtube</p>
                 </a>
             </div>
-            <p class="lead text-center">&copy; 2021, Soweto's Finest</p>
-    </footer>
+            <p class="lead text-center copywrite">&copy; 2021, Soweto's Finest</p>
+        </footer>
     </div>
-</body>
+    
 
-<!-- JS // BOOTSTRAP -->
+<!-- BOOTSTRAP v5.1.3 -->
 <script src="js/bootstrap.bundle.js"></script>
-<!-- NAV JS -->
-<script src="js/nav.js"></script>
 <!-- FONT AWESOME LINK -->
 <script src="https://kit.fontawesome.com/8633e4cab9.js" crossorigin="anonymous"></script>
+</body>
 </html>

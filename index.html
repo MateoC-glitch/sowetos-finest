@@ -4,133 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS // BOOTSTRAP -->
+    <!-- BOOTSTRAP v5.1.3 -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- CSS // CUSTOM STYLES -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="css/styles.css">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
     <title>Soweto's Finest</title>
 </head>
-
 <body>
-    <!-- Navigation -->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a class="active" href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </div>
-      
-    <!-- Navigation Button -->
-    <span class="display-5 menu-btn" onclick="openNav()"><i class="fas fa-bars"></i></span>
-
-    <!-- Container to push all content on navigation slide -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Soweto's Finest</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
     <div id="main">
-        <header id="home">
-            <div class="img-block">
-            </div>
-            <div class="text-block">
-                <center>
-                    <h1 class="display-1 text-center crown"><i class="fas fa-crown"></i></h1>
-                </center>
-                <h1 class="display-1 text-center">SOWETO'S FINEST</h1>
-                <h2 class="display-6 text-center">king's of sbhujwa</h2>
-            </div>
-            <div>
-                <iframe id="video" width="600" height="337" src="https://www.youtube.com/embed/hcVm3cxQu_E?autoplay=1&loop=1&mute=1&playlist=hcVm3cxQu_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <header>
+            <video src="img/videoplayback.mp4" autoplay muted loop></video>
+            <div class="overlay"></div>
+            <div class="text">
+                <h2 class="display-4">Join a first class experience with</h2>
+                <h1 class="display-1">Soweto's Finest</h1>
+                <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, ullam!</p>
+                <a class="custom-btn-light" href="../contact.html">BOOK NOW!</a>
             </div>
         </header>
     
-        <main>
-            <h2 class="display-5">[ Brief Overview ]</h2>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo cum eius qui voluptas! Architecto tempora eligendi fugiat voluptates, nihil natus voluptate eos sit facilis amet a saepe veritatis repudiandae incidunt?</p>
-            <br>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo cum eius qui voluptas! Architecto tempora eligendi fugiat voluptates, nihil natus voluptate eos sit facilis amet a saepe veritatis repudiandae incidunt?</p>
-
-            <center>
-                <a href="#" class="btn btn-lg btn-outline-light">Learn More</a>
-            </center>
-            
-            <h2 class="display-1 text-center">Book Soweto's Finest for your:</h2>
-            <ul>
-                <li>Corporate functions</li>
-                <li>Social events</li>
-            </ul>
-
-            <!-- BOOTSTRAP CAROUSEL -->
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <h2 class="text-center title text">Parties</h2>
-                        <img src="..\img\party-placeholder.jpeg" class="d-block w-100 carousel-img" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <h2 class="text-center title text">Concerts</h2>
-                        <img src="..\img\concert-placeholder.jpeg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <h2 class="text-center title text">Ceremonies</h2>
-                        <img src="..\img\ceremony-placeholder.jpeg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <h2 class="text-center title text">Festivals</h2>
-                        <img src="..\img\festival-placeholder.jpeg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+        <div class="bgimg-1">
+            <div class="caption text-center">
+                <span class="bgimg-border display-3">iSbhujwa</span>
             </div>
-        </main>
-
+        </div>
     
-        <section id="gallery">
-            <h2 class="display-6 text-center">Soweto's Finest Studio</h2>
-            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis dolores iure architecto deserunt suscipit, eius quos, ipsa earum iusto sapiente ipsam ipsum voluptas facere odit odio esse laborum sit vitae?</p>
-            <h2 class="display-6 text-center">Studio Gallery</h2>
-            <center>
-                <button class="btn btn-lg btn-outline-light" onclick="two()">2</button>
-                <button class="btn btn-lg btn-outline-light" onclick="four()">4</button>
-            </center>
-            <div class="row">
-                <div class="column">
-                    <img src="..\img\pexels-photo-157203.jpeg">
-                    <img src="..\img\pexels-photo-9211082.jpeg">
-                    <img src="..\img\ceremony-placeholder.jpeg">
-                </div>
-                <div class="column">
-                    <img src="..\img\pexels-photo-4434575.jpeg">
-                    <img src="..\img\pexels-photo-9211082.jpeg">
-                    <img src="..\img\pexels-photo-157203.jpeg">
-                </div>
-                <div class="column">
-                    <img src="..\img\ceremony-placeholder.jpeg">
-                    <img src="..\img\ceremony-placeholder.jpeg">
-                    <img src="..\img\pexels-photo-9211082.jpeg">
-                    <img src="..\img\ceremony-placeholder.jpeg">
-                </div>
-                <div class="column">
-                    <img src="..\img\ceremony-placeholder.jpeg">
-                    <img src="..\img\pexels-photo-9211082.jpeg">
-                    <img src="..\img\pexels-photo-9211082.jpeg">
-                </div>
+        <section id="studio" class="light-poly text-center">
+            <h1 class="display-1">Our studio</h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugit velit iusto consequatur quo sapiente?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugit velit iusto consequatur quo sapiente?</p>
+            <p class="lead">Our Address:</p>
+            <div class="address">
+                <center>
+                    <iframe id="shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.8900363016255!2d28.028551314446005!3d-26.200255170174575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c1d4968490f%3A0xb3fe2b3991c887c0!2s100%20Carr%20St%2C%20Newtown%2C%20Johannesburg%2C%202113!5e0!3m2!1sen!2sza!4v1637323371723!5m2!1sen!2sza" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </center>
             </div>
         </section>
     
+        <div class="bgimg-2">
+            <div class="caption text-center">
+                <span class="bgimg-border display-3">isPantsula</span>
+            </div>
+        </div>
+    
+        <section id="attention" class="dark-poly">
+            <h2 class="display-5 text-center">YOU CAN BOOK SOWETO'S FINEST FOR LIVE PERFORMANCES</h2>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque porro, optio nisi dolorem reiciendis ea nesciunt minus eveniet quia, illo, alias qui assumenda aut repudiandae. Doloremque aperiam saepe in a!</p>
+            <h2 class="display-6">We can perform at:</h2>
+            <ul>
+                <li>Parties</li>
+                <li>Concerts</li>
+                <li>Festivals</li>
+                <li>Ceremonies</li>
+                <li>Social Events</li>
+                <li>Corporate Functions</li>
+            </ul>
+        </section>
+    
+        <div class="bgimg-3">
+            <div class="caption text-center">
+                <span class="bgimg-border display-3">Krump</span>
+            </div>
+        </div>
+    
+        <section id="about" class="light-poly">
+            <h1 class="display-1">Who we are</h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt eos sapiente earum. Beatae tenetur, fugit sit quo officia quos incidunt facilis voluptatibus fuga quisquam aliquam? Nesciunt cum tempore doloribus aliquid molestiae. Maxime fugit fuga voluptatem molestiae fugiat, culpa facere dolor excepturi pariatur debitis inventore illum eligendi odit quasi nobis deserunt rem temporibus nulla expedita qui reiciendis neque? Aliquid non qui adipisci optio odit neque quo sapiente odio, harum alias nisi nemo ullam, pariatur natus eveniet ipsum nostrum dignissimos eos molestias itaque architecto! Reiciendis ducimus unde, temporibus sit dolorum eveniet, pariatur deserunt voluptatem accusantium minus sunt. Iste minus at accusantium quaerat.</p>
+            <a class="custom-btn-dark" href="../about.html">Read more</a>
+        </section>
     
         <footer>
             <h2 class="display-4 text-center">Contact us</h2>
@@ -141,42 +108,40 @@
                 <p class="text-center">OR</p>
                 <br>
                 <p class="lead text-center">Fill out the Contact form, and we will get back to you</p>
-                <a href="contact.html" class="btn btn-lg btn-outline-light">Contact now</a>
+                <a id="footer-a" class="custom-btn-light" href="">Contact</a>
                 <br>
                 <br>
             </div>
             <h3 class="display-6 text-center">follow us on</h3>
             <div class="text-center social-links justify-content-center">
-                <a href="https://twitter.com/SowetosFinest/">
+                <a href="https://twitter.com/SowetosFinest/" target="_blank">
                     <i class="fab fa-twitter"></i>
                     <p>Twitter</p>
                 </a>
-                <a href="https://www.facebook.com/sowetosfinestSA/">
+                <a href="https://www.facebook.com/sowetosfinestSA/" target="_blank">
                     <i class="fab fa-facebook-f"></i>
                     <p>Facebook</p>
                 </a>
-                <a href="https://www.instagram.com/sowetosfinestdancestudio_/">
+                <a href="https://www.instagram.com/sowetosfinestdancestudio_/" target="_blank">
                     <i class="fab fa-instagram"></i>
                     <p>Instagram</p>
                 </a>
-                <a href="https://vm.tiktok.com/7UWpvx/ ">
+                <a href="https://vm.tiktok.com/7UWpvx/" target="_blank">
                     <i class="fab fa-tiktok"></i>
                     <p>TikTok</p>
                 </a>
-                <a href="https://www.youtube.com/channel/UC3IMhH1x15K--5zcU7pqS3A">
+                <a href="https://www.youtube.com/channel/UC3IMhH1x15K--5zcU7pqS3A" target="_blank">
                     <i class="fab fa-youtube"></i>
                     <p>Youtube</p>
                 </a>
             </div>
-            <p class="lead text-center">&copy; 2021, Soweto's Finest</p>
+            <p class="lead text-center copywrite">&copy; 2021, Soweto's Finest</p>
         </footer>
     </div>
-</body>
 
-<!-- JS // BOOTSTRAP -->
+<!-- BOOTSTRAP v5.1.3 -->
 <script src="js/bootstrap.bundle.js"></script>
-<!-- NAV JS -->
-<script src="js/nav.js"></script>
 <!-- FONT AWESOME LINK -->
 <script src="https://kit.fontawesome.com/8633e4cab9.js" crossorigin="anonymous"></script>
+</body>
 </html>

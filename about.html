@@ -4,80 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS // BOOTSTRAP -->
+    <!-- BOOTSTRAP v5.1.3 -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- CSS // CUSTOM STYLES -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="css/styles.css">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
     <title>Soweto's Finest</title>
 </head>
-
 <body>
-    <!-- Navigation -->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Home</a>
-        <a class="active" href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </div>
-      
-    <!-- Navigation button -->
-    <span class="display-5 menu-btn" onclick="openNav()"><i class="fas fa-bars"></i></span>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Soweto's Finest</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <!-- container for pushing content to the side -->
     <div id="main">
-        <!-- Header -->
-        <header id="about">
-            <h1 class="display-1 text-center">About Us</h1>
-        </header>
-
-        <!-- About us -->
-        <div id="about-us">
-            <div class="about-flex">
-                <div class="img">
-                    <img src="..\img\pexels-photo-157203.jpeg" alt="">
-                </div>
-                <div class="info">
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, exercitationem? Qui quia dolor eaque rem tempora, suscipit, fugiat necessitatibus vero exercitationem similique iure. Quasi repudiandae impedit laborum, fuga ex laudantium?</p>
-                </div>
-            </div>
-            <div class="about-flex">
-                <div class="info">
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <ul>
-                        <li>2014 Big Brother Mzansi Live Show</li>
-                        <li>2014 Suresnes Cite Dansas - Hip Hop Dance Festival - Paris</li>
-                        <li>2013 Clash of the Choirs Finale</li>
-                        <li>2012 South African Dance Music Awards - Lead choreographer and creative director for all performances</li>
-                    </ul>
-                    <p class="lead text-center">And many more</p>
-                </div>
-                <div class="img">
-                    <img src="..\img\pexels-photo-157203.jpeg" alt="">
-                </div>
+        <div class="bgimg-4">
+            <div class="caption text-center">
+                <span class="bgimg-border display-3">About Us</span>
             </div>
         </div>
 
-        <!-- DANCE -->
-        <div id="join">
-            <div class="about-flex">
-                <div class="info">
-                    <h2 class="display-4 text-center">Join Us</h2>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sequi modi enim distinctio quisquam voluptatibus, perspiciatis quidem cumque quam voluptas quia alias perferendis labore veniam, iusto quod. Non, quod repudiandae.</p>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sequi modi enim distinctio quisquam voluptatibus, perspiciatis quidem cumque quam voluptas quia alias perferendis labore veniam, iusto quod. Non, quod repudiandae.</p>
-                    <a href="contact.html" class="btn btn-lg btn-outline-light">Contact us now</a>
-                </div>
-                <div class="image">
-                    <img src="..\img\studio-placeholder.jpg" alt="">
-                </div>
-            </div>
+        <section id="about" class="light-poly">
+            <h1 class="display-1 text-center">Where we started</h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati sit temporibus iusto quia expedita maiores sequi rerum aliquid vitae eaque optio laudantium asperiores animi accusantium et nemo voluptates aperiam facilis, culpa ab amet qui vero quis eligendi? Cum, veritatis delectus ab nobis veniam vel consequatur ullam doloribus ratione numquam, dolor voluptatum blanditiis laudantium. Cum minima doloremque quia, similique labore explicabo architecto. Consequatur omnis, quaerat in quam ad mollitia adipisci delectus!</p>
+            <h2 class="display-4">Some of our best highlights:</h2>
+            <ul>
+                <li>2014: Big Brother Mzansi Live Show</li>
+                <li>2014: Surensnes Cité Danses - Hip Hop dance festival - Paris</li>
+                <li>2013: Interarts Tour of Paris & Lyonn</li>
+                <li>2013: Live Amp Show - SABC 1</li>
+                <li>2013: Clash of the Choirs Finale</li>
+                <li>2013: AFCON Closing Ceremony - The group choreographed a 6-minute dance piece for 130 dancers</li>
+                <li>2012: SA Dance Music Awards - Lead choreographers and creative director for all performances</li>
+                <li>2012: SA Music Awards - Assistant choreographers</li>
+                <li>2012: Channel 0 Music Awards - Assistant choreographers</li>
+                <li>2012: MTN 8 Cup Final - Lead choreographers + performers for the halftime performance</li>
+                <li>2011 & 2012: Big Brother Africa - Resident performers</li>
+                <li>2011: Metro FM Music Awards</li>
+                <li>2011: Red Bull Beat Battle - Choreographed and performed</li>
+                <li>2010 - 2012: Miss Soweto - Choreographers and performed</li>
+                <li>2010: FIFA World Cup Closing Ceremony - Assistant choreographers, choreographed and performed a 3-minute closing dance piece</li>
+            </ul>
+        </section>
 
+        <div class="bgimg-5">
+            <div class="caption text-center">
+                <span class="bgimg-border display-3">About Us</span>
+            </div>
         </div>
 
-        <!-- FOOTER -->
+        <section id="focus" class="dark-poly">
+            <h1 class="display-1 text-center">Our focus</h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iure natus commodi cum dolore obcaecati? Natus, dolorum quisquam incidunt, provident doloribus nihil beatae fugit magni repellendus, qui eveniet et! Voluptates sint animi explicabo. Blanditiis consequatur quo quaerat earum quod rerum laborum odit repellendus amet labore enim sequi, illo temporibus est voluptatem esse ex! Nihil inventore similique quisquam est reprehenderit ipsa, blanditiis nobis, repellendus eveniet voluptatem ad maiores eum aliquam illo?</p>
+            <h2 class="display-4">Our dancing styles</h2>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, nam vitae! Vel beatae suscipit eos.</p>
+            <ul>
+                <li>iSbhujwa (founders & pioneers)</li>
+                <li>Hip-Hop</li>
+                <li>isPantsula</li>
+                <li>Krump</li>
+            </ul>
+            <a class="custom-btn-light" href="../contact.html">Book a lesson / performance</a>
+        </section>
+
+        <div class="bgimg-6">
+            <div class="caption text-center">
+                <span class="bgimg-border display-3">About Us</span>
+            </div>
+        </div>
+
+        <section id="crew" class="light-poly">
+            <h1 class="display-1 text-center">Meet the Crew</h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, soluta.</p>
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="..\img\IMG-20211119-WA0001.jpg" alt="Avatar" style="width:300px;height:auto;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>John Doe</h1>
+                                    <p>Architect & Engineer</p>
+                                    <p>We love that guy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="..\img\IMG-20211119-WA0001.jpg" alt="Avatar" style="width:300px;height:auto;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>John Doe</h1>
+                                    <p>Architect & Engineer</p>
+                                    <p>We love that guy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="..\img\IMG-20211119-WA0001.jpg" alt="Avatar" style="width:300px;height:auto;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>John Doe</h1>
+                                    <p>Architect & Engineer</p>
+                                    <p>We love that guy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
         <footer>
             <h2 class="display-4 text-center">Contact us</h2>
             <div class="footer-info">
@@ -87,42 +160,40 @@
                 <p class="text-center">OR</p>
                 <br>
                 <p class="lead text-center">Fill out the Contact form, and we will get back to you</p>
-                <a href="contact.html" class="btn btn-lg btn-outline-light">Contact now</a>
+                <a id="footer-a" class="custom-btn-light" href="../contact.html">Contact</a>
                 <br>
                 <br>
             </div>
             <h3 class="display-6 text-center">follow us on</h3>
             <div class="text-center social-links justify-content-center">
-                <a href="https://twitter.com/SowetosFinest/">
+                <a href="https://twitter.com/SowetosFinest/" target="_blank">
                     <i class="fab fa-twitter"></i>
                     <p>Twitter</p>
                 </a>
-                <a href="https://www.facebook.com/sowetosfinestSA/">
+                <a href="https://www.facebook.com/sowetosfinestSA/" target="_blank">
                     <i class="fab fa-facebook-f"></i>
                     <p>Facebook</p>
                 </a>
-                <a href="https://www.instagram.com/sowetosfinestdancestudio_/">
+                <a href="https://www.instagram.com/sowetosfinestdancestudio_/" target="_blank">
                     <i class="fab fa-instagram"></i>
                     <p>Instagram</p>
                 </a>
-                <a href="https://vm.tiktok.com/7UWpvx/ ">
+                <a href="https://vm.tiktok.com/7UWpvx/" target="_blank">
                     <i class="fab fa-tiktok"></i>
                     <p>TikTok</p>
                 </a>
-                <a href="https://www.youtube.com/channel/UC3IMhH1x15K--5zcU7pqS3A">
+                <a href="https://www.youtube.com/channel/UC3IMhH1x15K--5zcU7pqS3A" target="_blank">
                     <i class="fab fa-youtube"></i>
                     <p>Youtube</p>
                 </a>
             </div>
-            <p class="lead text-center">&copy; 2021, Soweto's Finest</p>
+            <p class="lead text-center copywrite">&copy; 2021, Soweto's Finest</p>
         </footer>
     </div>
-</body>
 
-<!-- JS // BOOTSTRAP -->
+<!-- BOOTSTRAP v5.1.3 -->
 <script src="js/bootstrap.bundle.js"></script>
-<!-- NAV JS -->
-<script src="js/nav.js"></script>
 <!-- FONT AWESOME LINK -->
 <script src="https://kit.fontawesome.com/8633e4cab9.js" crossorigin="anonymous"></script>
+</body>
 </html>
